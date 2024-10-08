@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paDavc
+    </title>
+
+ <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+    <div class="sunflower">
+        <div class="flower_wrapper">
+            <div class="flower_stem"></div>
+            <div class="flower_center"></div>
+            <div class="flower_petal flower_petal-1"></div>
+            <div class="flower_petal flower_petal-2"></div>
+            <div class="flower_petal flower_petal-3"></div>
+            <div class="flower_petal flower_petal-4"></div>
+            <div class="flower_petal flower_petal-5"></div>
+            <div class="flower_petal flower_petal-6"></div>
+            <div class="flower_petal flower_petal-7"></div>
+            <div class="flower_petal flower_petal-8"></div>
+            <div class="flower_petal flower_petal-9"></div>
+            <div class="flower_petal flower_petal-10"></div>
+            <div class="flower_petal flower_petal-11"></div>
+            <div class="flower_petal flower_petal-12"></div>
+            <div class="flower_petal flower_petal-13"></div>
+
+            <div class="flower_leaf flower_leaf-1"></div>
+            <div class="flower_leaf flower_leaf-2"></div>
+
+            <div class="flower_light flower_light-1"></div>
+            <div class="flower_light flower_light-2"></div>
+            <div class="flower_light flower_light-3"></div>
+            <div class="flower_light flower_light-4"></div>
+            <div class="flower_light flower_light-5"></div>
+            <div class="flower_light flower_light-6"></div>
+            <div class="flower_light flower_light-7"></div>
+            <div class="flower_light flower_light-8"></div>
+        </div>
+    </div>
+
+    <div class="light light-1"></div>
+    <div class="light light-2"></div>
+    <div class="light light-3"></div>
+    <div class="light light-4"></div>
+    <div class="light light-5"></div>
+    <div class="light light-6"></div>
+    <div class="light light-7"></div>
+    <div class="light light-8"></div>
+    <div class="light light-9"></div>
+    <div class="light light-10"></div>
+    <div class="light light-11"></div>
+    <div class="light light-12"></div>
+
+    <h1 class="title">Para ti</h1>
+
+    <div class="message">
+Wacha el codigo que no pude subir piipip, pero te envio video, se que van a empezar una semana atariada de tareas y todo lo demas y quiero que sepas que tu puedes con todo eso y mas , no te dejes rendir, el mundo espera al proximo programador que va a dominar el mundo tkm Boomst Añay
+    </div>
+
+
+
+<div class="card">
+      <div class="card-content">
+        <div class="card-front">
+          <p class="sub-title" >Para el pogamador</p>
+          <h1 class="title" >Hotwhels</h1>
+          <p class="sub-title">01/10/2024</p>
+        </div>
+
+        <div class="card-back">
+          <div class="back-title">Hotwhels</div>
+          <div class="movie-description">
+            <span>Postdata: </span>Mas vale tarde que nunca, no pude darte un ramo en fisico pero te hice un ramito en codigo, la intenciion es lo que cuenta  .
+          </div>
+          <div class="genre">
+            <span>Para: </span> El programador mas inteclectual que eh conocido, eres listo y creativo, vas a llegar lejos, yo creo en ti
+          </div>
+          <div class="release-date">
+            <span>DE: </span> Boomst Añay dominara el mundo
+          </div>
+
+        </div>
+      </div>
+      <video class="video" autoplay loop muted>
+        <source src="../video/hotwhels.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-bg: linear-gradient(to top, #1c7c90, #000);
+    --line-color: linear-gradient(to left top, #82ff86 20%, #144425, #104e1c);
+    --flower-center: radial-gradient(circle, #000, #ff5e00);
+    --leaf-color: radial-gradient(circle, #82ff86, #104e1c);
+    --petal-color: radial-gradient(circle, #ff5e00, #ffbb00);
+}
+
+body{
+    background-image: var(--color-bg);
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+.night {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  filter: blur(0.1vmin);
+  background-image: radial-gradient(ellipse at top, transparent 0%, var(--dark-color)),
+  radial-gradient(ellipse at bottom, var(--dark-color), rgba(145, 233, 255, 0.2)),
+  repeating-linear-gradient(220deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px,
+  transparent 22px), repeating-linear-gradient(189deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px,
+  transparent 19px, transparent 22px), repeating-linear-gradient(148deg, rgb(0, 0, 0) 0px,
+  rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), linear-gradient(90deg, rgb(41, 135, 175),
+  rgb(140, 183, 229));
+}
+
+.title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    top: 0;
+    left: 0;
+    color: rgb(237, 168, 49);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+    text-shadow: 0px 0px 20px rgba(228, 200, 19, 0.411);
+}
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.message {
+  background: #2faac0;
+  font-family: "Comic Sans MS", cursive;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.4;
+  padding: 10px;
+  position: absolute;
+  width: 250px;
+  opacity: 0;
+  animation: fadeIn 1s forwards, moveNote 5s linear infinite;
+  animation-delay: 2s;
+  right: 10px;
+  bottom: 50px;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes moveNote {
+  0% {
+    right: 10px;
+    bottom: 50px;
+  }
+  25% {
+    right: 30px;
+    bottom: 70px;
+  }
+  50% {
+    right: 10px;
+    bottom: 90px;
+  }
+  75% {
+    right: 30px;
+    bottom: 70px;
+  }
+  100% {
+    right: 10px;
+    bottom: 50px;
+  }
+}
+
+.flower_wrapper{
+    position: absolute;
+    left: 50%;
+    bottom: 2vmin;
+    animation: moving-flower-1 4s linear infinite;
+}
+
+.flower_stem{
+    width: 2vmin;
+    height: 65vmin;
+    background-image: var(--line-color);
+    border-radius: 4vmin;
+    animation-delay: 0.3s;
+}
+
+.flower_center{
+    position: absolute;
+    top: 0vmin;
+    left: 50%;
+    z-index: 5;
+    transform: translateX(-50%) rotate(-10deg);
+    width: 20vmin;
+    height: 20vmin;
+    border-radius: 50%;
+    background: var(--flower-center);
+    animation: open-flower-middle 2s 0.4s backwards;
+}
+
+.flower_petal{
+    position: absolute;
+    left: 50%;
+    z-index: 3;
+    bottom: 55vmin;
+    transform: translateX(-50%);
+    width: 7vmin;
+    height: 17vmin;
+    height: 20vmin;
+    background: var(--petal-color);
+    clip-path: ellipse(50% 50% at 50% 50%);
+    transform-origin: center bottom;
+    animation: open-flower 2s 1s backwards;
+}
+
+.flower_petal-1{
+    border-radius: 50% 50% 50% / 80% 80% 20% 20%;
+    background-image: none;
+    background: var(--petal-color);
+    animation: open-flower 1.4s 1s backwards;
+}
+
+.flower_petal-2{
+    transform: translateX(-50%) rotate(-30deg);
+}
+.flower_petal-3{
+    transform: translateX(-50%) rotate(-60deg);
+}
+.flower_petal-4{
+    transform: translateX(-50%) rotate(-90deg);
+}
+.flower_petal-5{
+    transform: translateX(-50%) rotate(-120deg);
+}
+.flower_petal-6{
+    transform: translateX(-50%) rotate(-150deg);
+}
+.flower_petal-7{
+    transform: translateX(-50%) rotate(30deg);
+}
+.flower_petal-8{
+    transform: translateX(-50%) rotate(60deg);
+}
+.flower_petal-9{
+    transform: translateX(-50%) rotate(90deg);
+}
+.flower_petal-10{
+    transform: translateX(-50%) rotate(120deg);
+}
+.flower_petal-11{
+    transform: translateX(-50%) rotate(150deg);
+}
+.flower_petal-12{
+    transform: translateX(-50%) rotate(180deg);
+}
+
+.flower_leaf{
+    position: absolute;
+    left: 60%;
+    bottom: 18vmin;
+    transform: translateX(-45%) rotate(80deg);
+    width: 7vmin;
+    height: 17vmin;
+    background: var(--leaf-color);
+    clip-path: none;
+    border-radius: 10vmin 2vmin 10vmin 2vmin;
+    transform-origin: center bottom;
+}
+
+.flower_leaf-1{
+    bottom: 18vmin;
+    transform: translateX(-45%) rotate(80deg);
+}
+
+.flower_leaf-2{
+    bottom: 23vmin;
+    transform: translateX(-55%) rotate(-80deg);
+}
+
+.flower_light{
+    position: absolute;
+    bottom: 70vmin;
+    width: 1vmin;
+    height: 1vmin;
+    background-color: rgb(255, 251, 0);
+    border-radius: 50%;
+    filter: blur(0.2vmin);
+    animation: light-ans 4s linear infinite backwards;
+}
+
+    .flower_light-1{
+        left: -2vmin;
+        animation-delay: 1s;
+    }
+
+    .flower_light-2{
+        left: 3vmin;
+        animation-delay: 0.5s;
+    }
+
+    .flower_light-3{
+        left: -6vmin;
+        animation-delay: 0.3s;
+    }
+
+    .flower_light-4{
+        left: 6vmin;
+        animation-delay: 0.9s;
+    }
+
+    .flower_light-5{
+        left: -1vmin;
+        animation-delay: 1.5s;
+    }
+
+    .flower_light-6{
+        left: -4vmin;
+        animation-delay: 3s;
+    }
+
+    .flower_light-7{
+        left: 3vmin;
+        animation-delay: 2s;
+    }
+
+    .flower_light-8{
+        left: -6vmin;
+        animation-delay: 3.5s;
+    }
+
+.light{
+    position: absolute;
+    bottom: 0vmin;
+    width: 1vmin;
+    height: 1vmin;
+    background-color: rgb(255, 251, 0);
+    border-radius: 50%;
+    filter: blur(0.2vmin);
+    animation: light-ans-background 7s linear infinite backwards;
+}
+
+
+    .light-1{
+        left: 10vmin;
+        animation-delay: 1s;
+    }
+
+    .light-2{
+        left: 20vmin;
+        animation-delay: 0.5s;
+    }
+
+    .light-3{
+        left: 60vmin;
+        animation-delay: 0.3s;
+    }
+
+    .light-4{
+        left: 80vmin;
+        animation-delay: 0.9s;
+    }
+
+    .light-5{
+        left: 45vmin;
+        animation-delay: 1.5s;
+    }
+
+    .light-6{
+        left: 10vmin;
+        animation-delay: 3s;
+    }
+
+    .light-7{
+        left: 90vmax;
+        animation-delay: 2s;
+    }
+
+    .light-8{
+        left: 60vmax;
+        animation-delay: 3.5s;
+    }
+
+    .light-9{
+        left: 70vmax;
+        animation-delay: 2s;
+    }
+
+    .light-10{
+        left: 95vmax;
+        animation-delay: 3.5s;
+    }
+
+    .light-11{
+        left: 75vmax;
+        animation-delay: 3s;
+    }
+
+    .light-12{
+        left: 85vmax;
+        animation-delay: 0.5s;
+    }
+
+@keyframes open-flower-leaves{
+    0%{
+        opacity: 0;
+        transform: translateX(-50%) scale(0);
+    }
+}
+
+@keyframes open-flower{
+    0%{
+        transform: translateX(-50%) rotate(0);
+    }
+}
+
+@keyframes open-flower-middle{
+    0%{
+        opacity: 0;
+        transform: translateX(-50%) scale(0);
+    }
+}
+
+@keyframes light-ans {
+    0% {
+      opacity: 0;
+      transform: translateY(0vmin);
+    }
+
+    25% {
+      opacity: 1;
+      transform: translateY(-5vmin) translateX(-2vmin);
+    }
+
+    50% {
+      opacity: 1;
+      transform: translateY(-15vmin) translateX(2vmin);
+      filter: blur(0.2vmin);
+    }
+
+    75% {
+      transform: translateY(-20vmin) translateX(-2vmin);
+      filter: blur(0.2vmin);
+    }
+
+    100% {
+      transform: translateY(-30vmin);
+      opacity: 0;
+      filter: blur(1vmin);
+    }
+}
+
+@keyframes light-ans-background {
+    0% {
+      opacity: 0;
+      transform: translateY(0vmin);
+    }
+
+    25% {
+      opacity: 1;
+      transform: translateY(-10vmin) translateX(-2vmin);
+    }
+
+    50% {
+      opacity: 1;
+      transform: translateY(-20vmin) translateX(2vmin);
+      filter: blur(0.2vmin);
+    }
+
+    60% {
+      transform: translateY(-30vmin) translateX(-2vmin);
+      filter: blur(0.2vmin);
+    }
+
+    70% {
+        transform: translateY(-40vmin) translateX(2vmin);
+        filter: blur(0.2vmin);
+    }
+
+    80% {
+        transform: translateY(-50vmin) translateX(-2vmin);
+        filter: blur(0.2vmin);
+    }
+
+    100% {
+      transform: translateY(-60vmin);
+      opacity: 0;
+      filter: blur(1vmin);
+    }
+}
+body {
+        font-family: "Poppins", sans-serif;
+        background-color: #061519;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .card {
+        width: 400px;
+        height: 600px;
+        position: relative;
+        overflow: hidden;
+        opacity: 0; /* Empieza invisible */
+  animation: fadeIn 1s forwards, moveNote 5s linear infinite; /* Añadir animación de movimiento */
+  animation-delay: 2s;
+ left: 10px;
+  bottom: 50px;
+   padding: 10px;
+  position: absolute;
+  box-shadow: 15px 15px 30px rgb(25, 25, 25),
+             -15px -15px 30px rgb(61, 89, 145);
+      }
+
+      .card-content {
+        position: relative;
+        padding: 15rem 5rem;
+        transform-style: preserve-3d;
+        transition: transform 3s;
+      }
+
+      .card:hover .card-content {
+        transform: rotateY(180deg);
+      }
+.card-front,
+      .card-back {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+      }
+
+      .card-front,
+.card-back {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  color: white;
+}
+.card-front {
+  background-image: url("../img/carr.png");
+  background-color: rgba(255, 163, 42, 0.2);
+  align-items: center;
+}
+
+      .card-front::before {
+        content: "";
+        position: absolute;
+        inset: 1rem;
+        border: 3px solid yellow;
+        transform: translateZ(2rem);
+      }
+
+      .title {
+        font-family: "Teko", sans-serif;
+        font-size: 4.5rem;
+        text-transform: uppercase;
+        line-height: 120%;
+        transform: translateZ(4.4rem);
+      }
+
+      .sub-title {
+        font-size: 0.95rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        transform: translateZ(3rem);
+                color: black; font-family: 'Comic Sans MS', cursive; font-weight: bolder;
+      }
+
+      .card-back {
+        background-color: rgba(0, 0, 0, 0.7);
+        transform: rotateY(180deg);
+        gap: 0.5rem;
+      }
+
+      .back-title {
+        font-family: "Teko", sans-serif;
+        font-size: 2.4rem;
+        font-weight: 600;
+        color: yellow;
+        text-transform: uppercase;
+        align-self: center;
+        transform: translateZ(2rem);
+      }
+
+      .card-back span {
+        font-weight: 600;
+        color: yellow;
+      }
+
+
+
+
+
+      .video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1; /* Mover el video detrás del contenido de la tarjeta */
+      }
+
+
+</style>
+
+</body>
+
+</html>
